@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class BoosterPad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    float Speed;
 
-    // Update is called once per frame
-    void Update()
+    Rigidbody rb;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        rb = other.GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * Speed;
     }
 }
