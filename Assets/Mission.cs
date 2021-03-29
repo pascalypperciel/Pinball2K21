@@ -18,7 +18,7 @@ public class Mission
     [Space]
     public int score; // Nombre de points que nous obtenons pour la mission (faculatif pour certaine mission)
     public int quantiteToComplete; // Nombre d'actions pour compléter la mission (Ex: frapper le bumper 3x pour compléter la mission)
-    [HideInInspector]public int actuelQuantite; // Quantité d'actions complétées actuellement
+    public int actuelQuantite; // Quantité d'actions complétées actuellement
 
     public void ResetMission()
     {
@@ -43,6 +43,7 @@ public class Mission
             actuelQuantite++;
 
             // Vérifier si la mission est complète
+            VérifierMissionComplète();
         }
     }
 
@@ -63,4 +64,5 @@ public class Mission
         }
         
     }
+
 }

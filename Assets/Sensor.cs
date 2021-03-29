@@ -34,10 +34,11 @@ public class Sensor : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos()
+     void OnDrawGizmos()
     {
         Gizmos.color = new Color32(0, 0, 255, 125);
         Gizmos.matrix = transform.localToWorldMatrix;
-        Gizmos.DrawCube(Vector2.zero, Vector3.one);
+        Gizmos.DrawCube(Vector3.zero, Vector3.one);
     }
+
 }
