@@ -7,7 +7,13 @@ public class MouvementObstacle : MonoBehaviour
     [SerializeField]
     private KeyCode[] mouvementKeys;
 
-    static private Vector3[] deplacements = new[] { new Vector3(1, 0, 0), new Vector3(-1, 0, 0) };
+    [SerializeField]
+    private Vector3 mouvement1;
+
+    [SerializeField]
+    private Vector3 mouvement2;
+
+    Vector3[] deplacements;
 
     [SerializeField]
     private KeyCode identification;
@@ -16,7 +22,7 @@ public class MouvementObstacle : MonoBehaviour
     private float speed;
     private void Bouger2d(KeyCode[] mouvementKeys, Vector3[] deplacements)
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetKeyDown(identification))
         {
             for (int i = 0; i < mouvementKeys.Length; ++i)
             {
@@ -29,5 +35,10 @@ public class MouvementObstacle : MonoBehaviour
     private void Update()
     {
         Bouger2d(mouvementKeys, deplacements);
+        
+    }
+    private void Start()
+    {
+        deplacements = new Vector3[2] {mouvement1,mouvement2 };
     }
 }
