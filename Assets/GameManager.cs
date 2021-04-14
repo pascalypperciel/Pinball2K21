@@ -49,11 +49,7 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    [SerializeField]
-    private int coucheObstacleAjoutant;
-
-    [SerializeField]
-    private int coucheObstacleBallePerdue;
+    
 
     
 }

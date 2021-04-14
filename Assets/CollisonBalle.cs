@@ -15,24 +15,20 @@ public class CollisonFinDeJeu : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision other)
     {
-        if(other.GetContact(0).thisCollider.gameObject.name == "") // Doit trouver quoi est le nom object pour detruir
-        {
-            BalleDetruit();
-        }
-        else if(other.GetContact(0).thisCollider.gameObject.name == "") // Doit trouver quoi est le nom object pour ajouter
+        
+        if(other.GetContact(0).thisCollider.gameObject.name == "Balle") // Doit trouver quoi est le nom object pour ajouter
         {
             BalleAjouter();
         }
     }
-    public void BalleDetruit()
-    {
-        Destroy(gameObject);
-        gameManager.EnleverBalle();
-    }
+    
     public void BalleAjouter()
     {
         gameManager.AjouterBalle();
         spawner.Spawn();
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        BalleAjouter();
+    }
 }

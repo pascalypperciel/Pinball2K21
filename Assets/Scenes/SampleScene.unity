@@ -298,7 +298,6 @@ MonoBehaviour:
   mouvementKeys: 6100000064000000
   mouvement1: {x: -1, y: 0, z: 0}
   mouvement2: {x: 1, y: 0, z: 0}
-  identification: 282
   speed: 10
 --- !u!1 &963194225
 GameObject:
@@ -421,6 +420,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.003
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011742687340, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.718
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012148118914, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007
@@ -431,11 +434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012959664250, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.048
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 4000012959664250, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.286
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4000013652596460, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_RootOrder
@@ -592,5 +595,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc29f0703297c54897f431ce822a31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coucheObstacleAjoutant: 0
-  coucheObstacleBallePerdue: 0

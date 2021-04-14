@@ -15,22 +15,24 @@ public class MouvementObstacle : MonoBehaviour
 
     Vector3[] deplacements;
 
-    [SerializeField]
-    private KeyCode identification;
+    Vector3 positionDepart;
+
+    float mouvementMaximal = 0.225f;
 
     [SerializeField]
     private float speed;
     private void Bouger2d(KeyCode[] mouvementKeys, Vector3[] deplacements)
     {
-        if(Input.GetKeyDown(identification))
-        {
+        
             for (int i = 0; i < mouvementKeys.Length; ++i)
             {
                 if (Input.GetKey(mouvementKeys[i]))
+                {
+                   if (MouvementAcceptable(deplacements[i]))
                     transform.Translate(deplacements[i] * speed);
+                }
+                
             }
-        }
-        
     }
     private void Update()
     {
@@ -40,5 +42,21 @@ public class MouvementObstacle : MonoBehaviour
     private void Start()
     {
         deplacements = new Vector3[2] {mouvement1,mouvement2 };
+        positionDepart = transform.position;
+    }
+    private bool MouvementAcceptable(Vector3 mouvement)
+    {
+        bool accepte = true;
+        if(mouvement.x < 0)
+        {
+            if (transform.position.x < positionDepart.x - mouvementMaximal)
+                accepte = false;
+        }
+        else
+        {
+            if (transform.position.x > positionDepart.x + mouvementMaximal)
+                accepte = false;
+        }
+        return accepte;
     }
 }
