@@ -16,7 +16,7 @@ public class CollisonFinDeJeu : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         
-        if(other.GetContact(0).thisCollider.gameObject.name == "Balle") // Doit trouver quoi est le nom object pour ajouter
+        if(other.GetContact(0).thisCollider.gameObject.name == "Balle") 
         {
             BalleAjouter();
         }
@@ -31,4 +31,5 @@ public class CollisonFinDeJeu : MonoBehaviour
     {
         BalleAjouter();
     }
+    
 }

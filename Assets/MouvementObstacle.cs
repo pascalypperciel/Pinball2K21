@@ -26,9 +26,8 @@ public class MouvementObstacle : MonoBehaviour
         
             for (int i = 0; i < mouvementKeys.Length; ++i)
             {
-                if (Input.GetKey(mouvementKeys[i]))
+                if (Input.GetKey(mouvementKeys[i]) & MouvementAcceptable(deplacements[i]))
                 {
-                   if (MouvementAcceptable(deplacements[i]))
                     transform.Translate(deplacements[i] * speed);
                 }
                 

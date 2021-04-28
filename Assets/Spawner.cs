@@ -12,6 +12,6 @@ public class Spawner : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(objectToClone, spawnPoint.position, transform.rotation);
+        Instantiate(objectToClone, spawnPoint.position, Quaternion.identity);
     }
 }
