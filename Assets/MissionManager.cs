@@ -73,4 +73,16 @@ public class MissionManager : MonoBehaviour
         missionTempsActive = false;
     }
 
+    public void ResetAllMissions()
+    {
+        foreach (var mission in missionList)
+        {
+            if (mission.active)
+            {
+                mission.DeactiverMission();
+            }
+        }
+        missionTempsActive = false;
+    }
+
 }
