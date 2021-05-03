@@ -6,13 +6,17 @@ using UnityEngine;
 public class Mission
 {
     public int missionId; //Identifiaction de chaque mission
+    public string description; // description de la mission
+
     [Space]
     public bool active; // Savoir si une mission est active
+    public bool permanentActive; // toujours active
     public bool missionComplete; // Savoir si une mission est complète
     [Space]
     public bool restartOnNextBall; // Si on perd la balle, d'une façon ou d'une autre, on veut recommencer cette mission pour la prochaine balle
     public bool stopOnBallEnd; // Si la balle s'arrête nous voulons soit la faire continuer ou arrêter complètement le progrès de la mission
     public bool resetOnComplete; // Lorsque la mission est complète, on veut la réinitialiser pour la faire répéter plus tard
+    public bool canTriggerMultiball; 
     [Space]
     public float timeToComplete; // Mission basé sur le temps (mission qui dure 10 secondes et s'arrête)
     [Space]
@@ -32,7 +36,15 @@ public class Mission
 
     public void DeactiverMission()
     {
-        active = false;
+        if (permanentActive)
+        {
+            active = true;
+        }
+        else
+        {
+            active = false;
+        }
+
         actuelQuantite = 0;
     }
 
@@ -58,6 +70,13 @@ public class Mission
                 // Arrêter minuteur
                 MissionManager.instance.ArreterMinuteur();
             }
+
+            if (canTriggerMultiball)
+            {
+                GameManagerVrai.instance.StartMultiBall();
+            }
+
+            ScoreManager.instance.AddScore(score);
 
             ResetMission();
             Debug.Log("Mission Complète");
