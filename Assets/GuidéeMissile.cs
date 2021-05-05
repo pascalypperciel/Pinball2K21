@@ -26,6 +26,9 @@ public class GuidéeMissile : MonoBehaviour
     [SerializeField]
     public GameObject barre;
 
+    [SerializeField]
+    public Canvas cv;
+
     List<GameObject> missile;
     GameObject canon;
     Slider slider;
@@ -35,6 +38,7 @@ public class GuidéeMissile : MonoBehaviour
 
     void Start()
     {
+        cv.enabled = false;
         canon = gameObject.GetComponent<GameObject>();
         missile = new List<GameObject>();
         slider = barre.GetComponent<Slider>();
@@ -48,6 +52,7 @@ public class GuidéeMissile : MonoBehaviour
         {
             boostNb = boostMontant;
             missileActif = false;
+            cv.enabled = false;
             missile[0] = InstancierMissile();
         }
         Rigidbody rb = missile[0].GetComponent<Rigidbody>();
@@ -94,6 +99,7 @@ public class GuidéeMissile : MonoBehaviour
         {
             if(missileActif == false)
             {
+                cv.enabled = true;
                 missileActif = true;
                 rb.velocity = missile[0].transform.TransformDirection(Vector3.up * speedMissile);
                 StartCoroutine(ActiverCollider(missile[0].GetComponent<CapsuleCollider>()));
