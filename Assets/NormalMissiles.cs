@@ -41,6 +41,7 @@ public class NormalMissiles : MonoBehaviour
         //Créer et positionner le missile
         GameObject missile = Instantiate(rocket, transform.position, Quaternion.Euler(98, 0, 0));
         missile.transform.position = new Vector3(transform.position.x, transform.position.y + 0.04f, transform.position.z);
+        missile.AddComponent<CollisionDestroy>();
 
         //Ajouter et régler le rigidbody
         Rigidbody r = missile.AddComponent<Rigidbody>();
@@ -48,10 +49,12 @@ public class NormalMissiles : MonoBehaviour
         r.velocity = transform.TransformDirection(Vector3.forward * speedMissile);
 
         //Ajouter et régler le collider et collisions
-        missile.layer = 10;
+        missile.layer = 13;
         CapsuleCollider col = missile.AddComponent<CapsuleCollider>();
         col.radius = 0.5f;
         col.isTrigger = true;
+
+        print("TESTING: " + missile.layer.ToString());
 
         return missile;
     }
