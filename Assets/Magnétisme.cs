@@ -14,11 +14,11 @@ public class Magnétisme : MonoBehaviour
     sorteAimant sorte = (sorteAimant) 1;
 
     Rigidbody rb;
-    Renderer renderer;
+    Renderer rdr;
 
     private void Start()
     {
-        renderer = gameObject.GetComponent<Renderer>();
+        rdr = gameObject.GetComponent<Renderer>();
         ChangerCouleur(sorte);
     }
 
@@ -31,7 +31,7 @@ public class Magnétisme : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Space))
         {
-            renderer.material.SetColor("_Color", Color.blue);
+            rdr.material.SetColor("_Color", Color.blue);
             if(inRange && rb != null)
             {
                 rb.velocity = rb.velocity + (transform.position - (rb.transform.position + rb.centerOfMass)) * Force * Time.deltaTime * (int) sorte;
@@ -57,11 +57,11 @@ public class Magnétisme : MonoBehaviour
         int sorteInt = (int) sorte;
         if(sorteInt == 1)
         {
-            renderer.material.SetColor("_Color", Color.red);
+            rdr.material.SetColor("_Color", Color.red);
         }
         else if (sorteInt == -1)
         {
-            renderer.material.SetColor("_Color", Color.yellow);
+            rdr.material.SetColor("_Color", Color.yellow);
         }
     }
 }
