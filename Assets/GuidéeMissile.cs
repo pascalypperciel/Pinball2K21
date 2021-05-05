@@ -62,7 +62,7 @@ public class GuidéeMissile : MonoBehaviour
         if (missileActif)
         {
             rb.velocity = missile[0].transform.TransformDirection(Vector3.up * speedMissile);
-            barre.transform.localScale = new Vector3(1,1,1);
+            barre.transform.localScale = new Vector3(1, 1, 1);
         }
 
         //Commandes A, D et Espace
