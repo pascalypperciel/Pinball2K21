@@ -340,7 +340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: 146.4}
+  m_AnchoredPosition: {x: -370, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252234967
@@ -710,6 +710,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3627616807137093958, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1380.2999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627616807137093958, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1014.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627616807137093958, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -653.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627616807137093958, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -486.95
+      objectReference: {fileID: 0}
     - target: {fileID: 3629946684398115170, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -932,11 +948,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291806660}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 146.4}
+  m_AnchoredPosition: {x: -150, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535454020
@@ -1094,7 +1110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205, y: 146.4}
+  m_AnchoredPosition: {x: -205, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676801735
@@ -3242,11 +3258,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291806660}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315, y: 146.4}
+  m_AnchoredPosition: {x: -315, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093947268
@@ -3692,11 +3708,11 @@ RectTransform:
   - {fileID: 1861987748}
   - {fileID: 1933109543}
   - {fileID: 252234966}
+  - {fileID: 1093947267}
+  - {fileID: 1434212457}
+  - {fileID: 676801734}
   - {fileID: 535454019}
   - {fileID: 1445983884}
-  - {fileID: 676801734}
-  - {fileID: 1434212457}
-  - {fileID: 1093947267}
   - {fileID: 1833579504}
   m_Father: {fileID: 67972286}
   m_RootOrder: 7
@@ -3878,11 +3894,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291806660}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: 146.4}
+  m_AnchoredPosition: {x: -260, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434212458
@@ -3953,11 +3969,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1291806660}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95, y: 146.4}
+  m_AnchoredPosition: {x: -95, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445983885
@@ -4384,7 +4400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: 146.4}
+  m_AnchoredPosition: {x: -370, y: 165}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833579505

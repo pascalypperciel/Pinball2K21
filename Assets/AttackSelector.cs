@@ -8,7 +8,7 @@ public class AttackSelector : MonoBehaviour
     [SerializeField]
     public Image selector;
 
-    Vector3 initialPos = new Vector3(-370, 146.4f, 0);
+    Vector3 initialPos = new Vector3(-370, 165, 0);
     private int déplacement = 55;
 
     GameObject magnet;
@@ -24,12 +24,12 @@ public class AttackSelector : MonoBehaviour
         selector.rectTransform.anchoredPosition = initialPos;
 
         //Préparation de tous les obstacles
-        earthquake = GameObject.Find("Earthquake");
-        magnet = GameObject.Find("Aimant");
-        missile = GameObject.Find("RocketLauncher");
-        missileGuidé = GameObject.Find("RocketLauncher");
-        slime = GameObject.Find("SlimeGun");
-        hole = GameObject.Find("HolePuncher");
+        earthquake = gameObject.transform.Find("Earthquake").gameObject;
+        magnet = gameObject.transform.Find("Aimant").gameObject;
+        missile = gameObject.transform.Find("RocketLauncher").gameObject;
+        missileGuidé = gameObject.transform.Find("RocketLauncher").gameObject;
+        slime = gameObject.transform.Find("SlimeGun").gameObject;
+        hole = gameObject.transform.Find("HolePuncher").gameObject;
         ÉteindreTout();
         ChangementPosition((int) initialPos.x);
     }
@@ -39,7 +39,7 @@ public class AttackSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             int currentPos = (int) selector.rectTransform.anchoredPosition.x;
-            if(currentPos < -85)
+            if(currentPos < -95)
             {
                 selector.rectTransform.anchoredPosition = new Vector3(currentPos + déplacement, initialPos.y, initialPos.z);
                 ChangementPosition(currentPos + déplacement);
@@ -48,7 +48,7 @@ public class AttackSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             int currentPos = (int)selector.rectTransform.anchoredPosition.x;
-            if(currentPos > -390)
+            if(currentPos > -370)
             {
                 selector.rectTransform.anchoredPosition = new Vector3(currentPos - déplacement, initialPos.y, initialPos.z);
                 ChangementPosition(currentPos - déplacement);
@@ -61,22 +61,22 @@ public class AttackSelector : MonoBehaviour
         ÉteindreTout();
         switch (posX)
         {
-            case -410:
+            case -370:
                 earthquake.GetComponent<TerrainGenerator>().enabled = true;
                 break;
-            case -345:
+            case -315:
                 magnet.GetComponent<Magnétisme>().enabled = true;
                 break;
-            case -280:
+            case -260:
                 missile.GetComponent<NormalMissiles>().enabled = true;
                 break;
-            case -215:
+            case -205:
                 missileGuidé.GetComponent<GuidéeMissile>().enabled = true;
                 break;
             case -150:
                 slime.GetComponent<ImmobilisationBalle>().enabled = true;
                 break;
-            case -85:
+            case -95:
                 hole.GetComponent<ObstacleTrou>().enabled = true;
                 break;
         }
