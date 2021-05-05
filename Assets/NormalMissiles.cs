@@ -54,8 +54,6 @@ public class NormalMissiles : MonoBehaviour
         col.radius = 0.5f;
         col.isTrigger = true;
 
-        print("TESTING: " + missile.layer.ToString());
-
         return missile;
     }
 
