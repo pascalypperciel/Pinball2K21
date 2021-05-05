@@ -8,8 +8,8 @@ public class AttackSelector : MonoBehaviour
     [SerializeField]
     public Image selector;
 
-    Vector3 initialPos = new Vector3(-410, 222, 0);
-    private int déplacement = 65;
+    Vector3 initialPos = new Vector3(-370, 146.4f, 0);
+    private int déplacement = 55;
 
     GameObject magnet;
     GameObject earthquake;
