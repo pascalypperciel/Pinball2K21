@@ -26,10 +26,8 @@ public class Magnétisme : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-            print("début f : " + sorte);
             sorte = (sorteAimant) ((int) sorte * -1);
             ChangerCouleur(sorte);
-            print("fin f : " + sorte);
         }
         if(Input.GetKey(KeyCode.Space))
         {
