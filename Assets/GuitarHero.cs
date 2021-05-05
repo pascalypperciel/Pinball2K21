@@ -31,16 +31,16 @@ public class GuitarHero : MonoBehaviour
         switch (nombre)
         {
             case 1:
-                points.Add(CréerPoint(pointGauche, 195));
+                points.Add(CréerPoint(pointGauche, 430));
                 break;
             case 2:
-                points.Add(CréerPoint(pointHaut, 265));
+                points.Add(CréerPoint(pointHaut, 570));
                 break;
             case 3:
-                points.Add(CréerPoint(pointBas, 335));
+                points.Add(CréerPoint(pointBas, 710));
                 break;
             case 4:
-                points.Add(CréerPoint(pointDroite, 405));
+                points.Add(CréerPoint(pointDroite, 850));
                 break;
         }
     }
@@ -54,14 +54,14 @@ public class GuitarHero : MonoBehaviour
         point.sprite = couleur;
 
         //Déplacer vers la bonne place initiale et mettre bonne taille
-        point.GetComponent<RectTransform>().anchoredPosition = new Vector3(posX, 260, 0);
-        point.GetComponent<RectTransform>().sizeDelta = new Vector2(65, 65);
+        point.GetComponent<RectTransform>().anchoredPosition = new Vector3(posX, 605, 0);
+        point.GetComponent<RectTransform>().sizeDelta = new Vector2(140, 140);
 
         //Rigidbody et Collider
         CircleCollider2D col = pointGO.AddComponent<CircleCollider2D>();
         Rigidbody2D rb = pointGO.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0;
-        rb.velocity = new Vector2(0, -500);
+        rb.velocity = new Vector2(0, -1000);
 
         return point;
     }

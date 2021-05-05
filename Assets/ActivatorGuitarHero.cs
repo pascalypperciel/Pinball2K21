@@ -17,6 +17,7 @@ public class ActivatorGuitarHero : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
+        print("TEST COLLIDER");
         aligné = true;
         point = collision.gameObject;
     }

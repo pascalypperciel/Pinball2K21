@@ -45,13 +45,11 @@ public class Magnétisme : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        print("ONTRIGGER");
         inRange = true;
         rb = other.GetComponent<Rigidbody>();
     }
     private void OnTriggerExit(Collider other)
     {
-        print("ONTRIGGEREXIT");
         inRange = false;
     }
     private void ChangerCouleur(sorteAimant sorte)
