@@ -363,7 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eeb9fbb1f67fbc4f945c279f3791a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 50
 --- !u!65 &68984813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -529,7 +528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f9c3bc9d8b60c4e844de93d5cda9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touche: 0
 --- !u!58 &100871301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -658,7 +656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd339b894c98494ca210b2406ab0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selector: {fileID: 1981334449}
 --- !u!4 &243475585
 Transform:
   m_ObjectHideFlags: 0
@@ -949,7 +946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f9c3bc9d8b60c4e844de93d5cda9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touche: 0
 --- !u!58 &496362301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -995,8 +991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b62431b25d5444495976d4cad6999d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenSlime: {fileID: 6316126833187218278, guid: c5ec77d67f3e55146a420dd56d368c4f, type: 3}
-  speed: 2
 --- !u!4 &543565069
 Transform:
   m_ObjectHideFlags: 0
@@ -1143,7 +1137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f9c3bc9d8b60c4e844de93d5cda9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touche: 0
 --- !u!58 &662369736
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1368,8 +1361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b52b8d1ce4243044806c8439ead9c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "intensit\xE9": 0.1
-  "activ\xE9": 0
 --- !u!124 &809410494
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1481,7 +1472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eeb9fbb1f67fbc4f945c279f3791a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 100
 --- !u!65 &817378109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2724,10 +2714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf5dc743094d91a479b88022ccb33eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 1
-  perlinNoise: 0
-  "diff\xE9rence": 0.1
-  multiplicateur: 0.04
 --- !u!4 &1582424766
 Transform:
   m_ObjectHideFlags: 0
@@ -2762,13 +2748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2ea2ef2aa03f540a527be2fcb65374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "sensibilit\xE9Rotation": 10
-  speedMissile: 0.6
-  "sensibilit\xE9Guidage": 20
-  "boostIntensit\xE9": 2
-  boostMontant: 2000
-  rocket: {fileID: 1086209260363508, guid: d8c23dd44f6189143a7ace47500afb1b, type: 3}
-  barre: {fileID: 2086069990}
 --- !u!1 &1641460419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,8 +2921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39581131df5fd024ab9039b32d3c4daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: 1
-  sorte: 0
 --- !u!136 &1722204999
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3050,12 +3027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d78b17da8b49c4a89880384e846ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointGauche: {fileID: 21300000, guid: 2d8495d07266c034d8bcbbfa76f5e82f, type: 3}
-  pointHaut: {fileID: 21300000, guid: 5906b72209df0f849a6416eed1f4954a, type: 3}
-  pointBas: {fileID: 21300000, guid: e3d22a47efc9b5544b6b93ac2bc310db, type: 3}
-  pointDroite: {fileID: 21300000, guid: 5e5b76a1ebaea5349ab24b2f0b0ff4cc, type: 3}
-  canvas: {fileID: 2046860443}
-  nbPoints: 20
 --- !u!4 &1929082888
 Transform:
   m_ObjectHideFlags: 0
@@ -3160,7 +3131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f9c3bc9d8b60c4e844de93d5cda9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touche: 0
 --- !u!58 &1951047271
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3406,11 +3376,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &2086069990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4067457350037663344, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
-  m_PrefabInstance: {fileID: 836683012646494922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2088532154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3500,6 +3465,10 @@ PrefabInstance:
     - target: {fileID: 2126519165512240520, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629946684398115170, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7020667942835767279, guid: 09a34f1d07c669a419ec9016bf51a940, type: 3}
       propertyPath: m_RootOrder
