@@ -8,8 +8,8 @@ public class AttackSelector : MonoBehaviour
     [SerializeField]
     public Image selector;
 
-    Vector3 initialPos = new Vector3(-370, 165, 0);
-    private int déplacement = 55;
+    Vector3 initialPos = new Vector3(-150, -198, 0);
+    private int déplacement = 50;
 
     GameObject magnet;
     GameObject earthquake;
@@ -17,6 +17,7 @@ public class AttackSelector : MonoBehaviour
     GameObject missileGuidé;
     GameObject slime;
     GameObject hole;
+    GameObject move;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class AttackSelector : MonoBehaviour
         missileGuidé = gameObject.transform.Find("RocketLauncher").gameObject;
         slime = gameObject.transform.Find("SlimeGun").gameObject;
         hole = gameObject.transform.Find("HolePuncher").gameObject;
+        move = gameObject.transform.Find("MovingBumper").gameObject;
         ÉteindreTout();
         ChangementPosition((int) initialPos.x);
     }
@@ -39,7 +41,7 @@ public class AttackSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             int currentPos = (int) selector.rectTransform.anchoredPosition.x;
-            if(currentPos < -95)
+            if(currentPos < 150)
             {
                 selector.rectTransform.anchoredPosition = new Vector3(currentPos + déplacement, initialPos.y, initialPos.z);
                 ChangementPosition(currentPos + déplacement);
@@ -48,7 +50,7 @@ public class AttackSelector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             int currentPos = (int)selector.rectTransform.anchoredPosition.x;
-            if(currentPos > -370)
+            if(currentPos > -150)
             {
                 selector.rectTransform.anchoredPosition = new Vector3(currentPos - déplacement, initialPos.y, initialPos.z);
                 ChangementPosition(currentPos - déplacement);
@@ -61,23 +63,26 @@ public class AttackSelector : MonoBehaviour
         ÉteindreTout();
         switch (posX)
         {
-            case -370:
+            case -150:
                 earthquake.GetComponent<TerrainGenerator>().enabled = true;
                 break;
-            case -315:
+            case -100:
                 magnet.GetComponent<Magnétisme>().enabled = true;
                 break;
-            case -260:
+            case -50:
                 missile.GetComponent<NormalMissiles>().enabled = true;
                 break;
-            case -205:
+            case 0:
                 missileGuidé.GetComponent<GuidéeMissile>().enabled = true;
                 break;
-            case -150:
+            case 50:
                 slime.GetComponent<ImmobilisationBalle>().enabled = true;
                 break;
-            case -95:
+            case 100:
                 hole.GetComponent<ObstacleTrou>().enabled = true;
+                break;
+            case 150:
+                move.GetComponent<ObstacleTrou>().enabled = true;
                 break;
         }
     }
@@ -91,6 +96,7 @@ public class AttackSelector : MonoBehaviour
         missileGuidé.GetComponent<GuidéeMissile>().enabled = false;
         slime.GetComponent<ImmobilisationBalle>().enabled = false;
         hole.GetComponent<ObstacleTrou>().enabled = false;
+        move.GetComponent<MouvementObstacle>().enabled = false;
 
         //Effacer game objects nécessaires
         GameObject tigeGuide = GameObject.Find("GuideTige");
