@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ObstacleTrou : MonoBehaviour
 {
-    private CollisonBalle collisionFin;
-    private void Awake()
+    //private CollisonBalle collisionFin;
+    /*private void Awake()
     {
         collisionFin = GetComponent<CollisonBalle>();
-    }
+    }*/
     [SerializeField]
     KeyCode activerKey;
 
@@ -17,8 +17,7 @@ public class ObstacleTrou : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positionDepart = transform.position;
-        transform.Translate(positionDepart.x + 10, positionDepart.y, positionDepart.z);
+        transform.Translate(0, 3, 0);
     }
 
     // Update is called once per frame
@@ -30,15 +29,15 @@ public class ObstacleTrou : MonoBehaviour
     {
         if (Input.GetKeyDown(activerKey))
         {
-            transform.Translate(positionDepart.x, positionDepart.y, positionDepart.z);
+            transform.Translate(0, -3, 0);
 
         }
         else if (Input.GetKeyUp(activerKey))
-            transform.Translate(positionDepart.x + 10, positionDepart.y, positionDepart.z);
+            transform.Translate(0, 3, 0);
     }
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         collisionFin.BalleDetruit();
-    }
-   
+    }*/
+
 }
