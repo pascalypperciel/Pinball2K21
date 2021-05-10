@@ -10,8 +10,11 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private Transform spawnPoint;
 
+    private GameObject gO;
+
     public void Spawn()
     {
-        Instantiate(objectToClone, spawnPoint.position, Quaternion.identity);
+        gO = Instantiate(objectToClone, spawnPoint.position, Quaternion.identity);
+        gO.layer = 7;
     }
 }
