@@ -39,5 +39,12 @@ public class ObstacleTrou : MonoBehaviour
     {
         collisionFin.BalleDetruit();
     }*/
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.GetContact(0).thisCollider.gameObject.name == "Balle") 
+        {
+            
+        }
 
+    }
 }
