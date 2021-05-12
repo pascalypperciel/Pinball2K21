@@ -19,12 +19,7 @@ public class TerrainGenerator : MonoBehaviour
     private int nbCubes = 13;
     private float tailleCubes = 0.05f;
     private float diffRangée = 0.101f / 26;
-    Material mat;
-
-    private void Start()
-    {
-        mat = Resources.Load("background", typeof(Material)) as Material;
-    }
+    public Material matCubes;
 
     private void Update()
     {
@@ -37,7 +32,7 @@ public class TerrainGenerator : MonoBehaviour
                 {
                     perlinNoise = Mathf.PerlinNoise(i * différence, j * différence);
                     GameObject gameObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    gameObject.GetComponent<Renderer>().material = mat;
+                    gameObject.GetComponent<Renderer>().material = matCubes;
                     gameObject.transform.Rotate(-85, 0, 0);
                     gameObject.transform.localScale = new Vector3(tailleCubes, tailleCubes, tailleCubes);
                     gameObject.transform.position = new Vector3(i * tailleCubes - 0.26f, perlinNoise * multiplicateur + 1.14f - (j * diffRangée), j * tailleCubes - 0.78f);
