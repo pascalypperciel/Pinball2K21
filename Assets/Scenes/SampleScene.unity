@@ -1147,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.042703
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011742687340, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.712
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011744766100, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -3648,6 +3652,7 @@ MonoBehaviour:
   boostMontant: 2000
   rocket: {fileID: 1086209260363508, guid: d8c23dd44f6189143a7ace47500afb1b, type: 3}
   barre: {fileID: 0}
+  cv: {fileID: 0}
 --- !u!1 &1540600717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,6 +3728,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540600717}
   m_CullTransparentMesh: 1
+--- !u!1 &1542830383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011643477584, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+  m_PrefabInstance: {fileID: 571532714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542830385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542830383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f792b95ce011dd4eb922082b365c237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouvementKeys: 6100000064000000
+  mouvement1: {x: 1, y: 0, z: 0}
+  mouvement2: {x: -1, y: 0, z: 0}
+  speed: 2
 --- !u!1001 &1637369681
 PrefabInstance:
   m_ObjectHideFlags: 0
