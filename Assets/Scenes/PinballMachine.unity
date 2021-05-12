@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 126828922}
   - component: {fileID: 126828921}
   - component: {fileID: 126828920}
-  m_Layer: 7
+  m_Layer: 15
   m_Name: LoseArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
