@@ -76,7 +76,7 @@ public class Mission
                 GameManagerVrai.instance.StartMultiBall();
             }
 
-            ScoreManager.instance.AddScore(score);
+            //ScoreManager.instance.AddScore(score);
 
             ResetMission();
             Debug.Log("Mission Complète");

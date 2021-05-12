@@ -6,8 +6,8 @@ using UnityEngine;
 public class Puncher : MonoBehaviour
 {
     float puissance;
-    float maxPuissance = 10f;
-    float puissanceParTic = 1;
+    float maxPuissance = 16f;
+    float puissanceParTic = 2;
 
     public Animator plungerAnim;
 
