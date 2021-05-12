@@ -1321,6 +1321,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715498826}
   m_CullTransparentMesh: 1
+--- !u!1 &785749399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012789013022, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+  m_PrefabInstance: {fileID: 852655150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &785749403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785749399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f693dccc0761354986e7b8c289a56c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  multiSpawnPoint: {fileID: 0}
 --- !u!1 &809410491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1660,10 @@ PrefabInstance:
     - target: {fileID: 1000014240204606, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011742687340, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.714
       objectReference: {fileID: 0}
     - target: {fileID: 4000013652596460, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
       propertyPath: m_RootOrder
@@ -2009,6 +2033,27 @@ Transform:
   m_Father: {fileID: 889615295}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -201.039, z: 0}
+--- !u!1 &1001221503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011643477584, guid: 07ca85d850f66b8429f397da9cb5635b, type: 3}
+  m_PrefabInstance: {fileID: 852655150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1001221505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001221503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f792b95ce011dd4eb922082b365c237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouvementKeys: 6100000064000000
+  mouvement1: {x: 1, y: 0, z: 0}
+  mouvement2: {x: -1, y: 0, z: 0}
+  speed: 0.1
 --- !u!1 &1026646421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,6 +2966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39581131df5fd024ab9039b32d3c4daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Force: 0
+  sorte: 1
 --- !u!136 &1722204999
 CapsuleCollider:
   m_ObjectHideFlags: 0
