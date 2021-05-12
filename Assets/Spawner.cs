@@ -16,6 +16,5 @@ public class Spawner : MonoBehaviour
     {
         gO = Instantiate(objectToClone, spawnPoint.position, Quaternion.identity);
         gO.layer = 7;
-
     }
 }

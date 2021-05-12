@@ -27,7 +27,7 @@ public class GuitarHero : MonoBehaviour
 
     void CréerSéquence()
     {
-        int nombre = Random.Range(1, 4);
+        int nombre = Random.Range(1, 5);
         switch (nombre)
         {
             case 1:
@@ -77,11 +77,11 @@ public class GuitarHero : MonoBehaviour
             }
         }
 
-        Rigidbody rb = GameObject.Find("Boule").GetComponent<Rigidbody>();
+        Rigidbody rb = GameObject.Find("Sphere(Clone)").GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.None;
         if (détruite)
         {
-            rb.velocity = transform.forward * 2;
+            rb.velocity = transform.forward * -2;
         }
     }
 }
