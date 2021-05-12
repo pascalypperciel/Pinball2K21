@@ -11,7 +11,10 @@ public class Spawner : MonoBehaviour
     private Transform spawnPoint;
 
     private GameObject gO;
-
+    private void Update()
+    {
+        
+    }
     public void Spawn()
     {
         gO = Instantiate(objectToClone, spawnPoint.position, Quaternion.identity);
