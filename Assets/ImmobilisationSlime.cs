@@ -34,7 +34,7 @@ public class ImmobilisationSlime : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.name == "Boule")
+        if(collision.gameObject.layer == 7)
         {
             boule = collision.collider.attachedRigidbody;
             boule.constraints = RigidbodyConstraints.FreezeAll;
