@@ -17,7 +17,7 @@ public class MouvementObstacle : MonoBehaviour
 
     Vector3 positionDepart;
 
-    float mouvementMaximal = 0.225f;
+    float mouvementMaximal = 0.200f;
 
     [SerializeField]
     private float speed;
@@ -40,8 +40,9 @@ public class MouvementObstacle : MonoBehaviour
     }
     private void Start()
     {
-        deplacements = new Vector3[2] {mouvement1,mouvement2 };
         positionDepart = transform.position;
+        deplacements = new Vector3[2] {mouvement1,mouvement2 };
+        
     }
     private bool MouvementAcceptable(Vector3 mouvement)
     {
