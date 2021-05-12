@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: ad09367db5d9c91418703219dcc9f94d
+timeCreated: 1479905277
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BoardSurface
+    100002: Button_Money
+    100004: Button_Start
+    100006: ButtonFlipper_Left
+    100008: ButtonFlipper_Right
+    100010: Machine
+    100012: Machine 1
+    100014: //RootNode
+    100016: ScoreA
+    100018: ScoreB
+    100020: ScoreC
+    100022: ScoreD
+    100024: ScoreE
+    100026: ScoreF
+    100028: ScoreG
+    100030: Trigger_Bumper
+    100032: COL_PinballMachine
+    100034: Glass
+    400000: BoardSurface
+    400002: Button_Money
+    400004: Button_Start
+    400006: ButtonFlipper_Left
+    400008: ButtonFlipper_Right
+    400010: Machine
+    400012: Machine 1
+    400014: //RootNode
+    400016: ScoreA
+    400018: ScoreB
+    400020: ScoreC
+    400022: ScoreD
+    400024: ScoreE
+    400026: ScoreF
+    400028: ScoreG
+    400030: Trigger_Bumper
+    400032: COL_PinballMachine
+    400034: Glass
+    2300000: BoardSurface
+    2300002: Button_Money
+    2300004: Button_Start
+    2300006: ButtonFlipper_Left
+    2300008: ButtonFlipper_Right
+    2300010: Machine 1
+    2300012: ScoreA
+    2300014: ScoreB
+    2300016: ScoreC
+    2300018: ScoreD
+    2300020: ScoreE
+    2300022: ScoreF
+    2300024: ScoreG
+    2300026: Trigger_Bumper
+    2300028: COL_PinballMachine
+    2300030: Glass
+    3300000: BoardSurface
+    3300002: Button_Money
+    3300004: Button_Start
+    3300006: ButtonFlipper_Left
+    3300008: ButtonFlipper_Right
+    3300010: Machine 1
+    3300012: ScoreA
+    3300014: ScoreB
+    3300016: ScoreC
+    3300018: ScoreD
+    3300020: ScoreE
+    3300022: ScoreF
+    3300024: ScoreG
+    3300026: Trigger_Bumper
+    3300028: COL_PinballMachine
+    3300030: Glass
+    4300000: ScoreA
+    4300002: ScoreB
+    4300004: ScoreC
+    4300006: ScoreD
+    4300008: ScoreE
+    4300010: ScoreF
+    4300012: ScoreG
+    4300014: Trigger_Bumper
+    4300016: ButtonFlipper_Right
+    4300018: ButtonFlipper_Left
+    4300020: Button_Money
+    4300022: Button_Start
+    4300024: Machine
+    4300026: BoardSurface
+    4300028: Glass
+    4300030: COL_PinballMachine
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
