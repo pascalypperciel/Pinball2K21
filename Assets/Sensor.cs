@@ -21,7 +21,7 @@ public class Sensor : MonoBehaviour
             MissionManager.instance.UpdateMission(triggerID);
         }
     }
-    void OnCollisoinEnter(Collision col)
+    void OnCollisionEnter(Collision col)
     {
         if (isStarter)
         {
