@@ -12,6 +12,6 @@ public class BoosterPad : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         rb = other.GetComponent<Rigidbody>();
-        rb.velocity = transform.forward * Speed;
+        rb.velocity = -transform.forward * Speed;
     }
 }
