@@ -30,7 +30,7 @@ public class Mission
         {
             active = false;
             missionComplete = false;
-            actuelQuantite = 0;
+            actuelQuantite = -1;
         }
     }
 
@@ -61,7 +61,8 @@ public class Mission
 
     void VérifierMissionComplète()
     {
-        if(actuelQuantite >= quantiteToComplete)
+
+        if (actuelQuantite >= quantiteToComplete)
         {
             missionComplete = true;
             active = false;
@@ -76,7 +77,7 @@ public class Mission
                 GameManagerVrai.instance.StartMultiBall();
             }
 
-            //ScoreManager.instance.AddScore(score);
+            ScoreManager.instance.AddScore(score);
 
             ResetMission();
             Debug.Log("Mission Complète");
