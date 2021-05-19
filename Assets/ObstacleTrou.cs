@@ -14,11 +14,7 @@ public class ObstacleTrou : MonoBehaviour
 
     Vector3 positionDepart;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        transform.Translate(0, 3, 0);
-    }
+    
 
     // Update is called once per frame
     void Update()
