@@ -33,6 +33,7 @@ public class TerrainGenerator : MonoBehaviour
                     perlinNoise = Mathf.PerlinNoise(i * différence, j * différence);
                     GameObject gameObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     gameObject.GetComponent<Renderer>().material = matCubes;
+                    gameObject.layer = 17;
                     gameObject.transform.Rotate(-85, 0, 0);
                     gameObject.transform.localScale = new Vector3(tailleCubes, tailleCubes, tailleCubes);
                     gameObject.transform.position = new Vector3(i * tailleCubes - 0.26f, perlinNoise * multiplicateur + 1.14f - (j * diffRangée), j * tailleCubes - 0.78f);
