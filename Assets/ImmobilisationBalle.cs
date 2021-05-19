@@ -11,7 +11,6 @@ public class ImmobilisationBalle : MonoBehaviour
     float speed;
 
     List<GameObject> slime;
-    bool slimeActif = false;
 
     Vector3 posInitiale = new Vector3(0, 1.5f, 0);
     int compteur = -1;
@@ -34,7 +33,6 @@ public class ImmobilisationBalle : MonoBehaviour
         //Création et préparation d'un nouveau slime
         if (slime[0] == null)
         {
-            slimeActif = false;
             slime[0] = InstancierSlime(posInitiale, true);
             slime[1] = (InstancierGuide());
         }

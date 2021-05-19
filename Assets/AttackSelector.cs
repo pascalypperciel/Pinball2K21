@@ -30,7 +30,7 @@ public class AttackSelector : MonoBehaviour
         missile = gameObject.transform.Find("RocketLauncher").gameObject;
         missileGuidé = gameObject.transform.Find("RocketLauncher").gameObject;
         slime = gameObject.transform.Find("SlimeGun").gameObject;
-        hole = gameObject.transform.Find("HolePuncher").gameObject;
+        hole = gameObject.transform.Find("HoleBumper").gameObject;
         move = gameObject.transform.Find("MovingBumper").gameObject;
         ÉteindreTout();
         ChangementPosition((int) initialPos.x);
@@ -82,7 +82,7 @@ public class AttackSelector : MonoBehaviour
                 hole.GetComponent<ObstacleTrou>().enabled = true;
                 break;
             case 150:
-                move.GetComponent<ObstacleTrou>().enabled = true;
+                move.GetComponent<MouvementObstacle>().enabled = true;
                 break;
         }
     }
