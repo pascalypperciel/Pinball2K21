@@ -104,6 +104,8 @@ public class ImmobilisationBalle : MonoBehaviour
     {
         //Créer et positionner le missile
         GameObject tige = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        CapsuleCollider col = tige.GetComponent<CapsuleCollider>();
+        Destroy(col);
         tige.transform.position = new Vector3(0, 0.5f, 0);
         tige.transform.localScale = new Vector3(0.01f, 0.01f, 2);
         tige.transform.localRotation = Quaternion.Euler(90, 0, 0);
@@ -111,5 +113,5 @@ public class ImmobilisationBalle : MonoBehaviour
         tige.name = "GuideTige";
 
         return tige;
-    }    
+    }
 }
