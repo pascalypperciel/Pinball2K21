@@ -21,7 +21,7 @@ public class UiManager : MonoBehaviour
 
     public void UpdateBallText(int amount)
     {
-        ballAmountText.text = "Balls: " + amount;
+        ballAmountText.text = "Balle Restante: " + amount;
     }
     public void UpdateScoreText(int amount)
     {
