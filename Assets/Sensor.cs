@@ -38,7 +38,7 @@ public class Sensor : MonoBehaviour
     {
         Gizmos.color = new Color32(0, 0, 255, 125);
         Gizmos.matrix = transform.localToWorldMatrix;
-        Gizmos.DrawCube(Vector3.zero, Vector3.one);
+        Gizmos.DrawCube(Vector3.zero, new Vector3(0.1f,0.1f,0.1f));
     }
 
 }
