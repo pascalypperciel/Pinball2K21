@@ -21,7 +21,7 @@ public class Gravité : MonoBehaviour
     void Update()
     {
         distance = gameObject.transform.position.y - machine.transform.position.y;
-        force = forceGravitationelle * (rb.mass * masseMachine) / distance;
+        force = forceGravitationelle * (rb.mass * masseMachine) / Mathf.Pow(distance,2);
         rb.velocity -= new Vector3(0, force, 0);
     }
 }

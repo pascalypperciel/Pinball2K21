@@ -80,7 +80,6 @@ public class Mission
             ScoreManager.instance.AddScore(score);
 
             ResetMission();
-            Debug.Log("Mission Complète");
         }
         
     }
