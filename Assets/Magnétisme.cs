@@ -5,7 +5,7 @@ using UnityEngine;
 public class Magnétisme : MonoBehaviour
 {
     [SerializeField]
-    float Force;
+    float courantAmpère;
 
     enum sorteAimant { Attraction = 1, Répulsion = -1};
     bool inRange = false;
@@ -16,6 +16,10 @@ public class Magnétisme : MonoBehaviour
     Rigidbody rb;
     Renderer rdr;
 
+    //Constante magnétique
+    private float u0 = 4 * Mathf.PI * Mathf.Pow(10, -7);
+
+    float distance;
     private void Start()
     {
         rdr = gameObject.GetComponent<Renderer>();
@@ -31,10 +35,13 @@ public class Magnétisme : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Space))
         {
+            distance = Vector3.Distance(gameObject.transform.position, rb.transform.position);
             rdr.material.SetColor("_Color", Color.blue);
             if(inRange && rb != null)
             {
-                rb.velocity = rb.velocity + (transform.position - (rb.transform.position + rb.centerOfMass)) * Force * Time.deltaTime * (int) sorte;
+                //Formule du Théorème d'Ampères: force du champ magnétique = (constante magnétique * courant) / (2 * pi * distance).
+                //On peut la voir intégré ci-dessous.
+                rb.velocity = rb.velocity + (transform.position - (rb.transform.position + rb.centerOfMass)) * (u0 * courantAmpère) / (2 * Mathf.PI * distance) * Time.deltaTime * (int)sorte;
             }
         }
         else
