@@ -15,9 +15,6 @@ public class GuidéeMissile : MonoBehaviour
     float sensibilitéGuidage = 50f;
 
     [SerializeField]
-    float boostIntensité = 2f;
-
-    [SerializeField]
     float boostMontant = 10000f;
 
     [SerializeField]
